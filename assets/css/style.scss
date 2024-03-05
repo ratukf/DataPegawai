@@ -1,0 +1,80 @@
+/* Import font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/// Variabel warna
+$dark-navy: #161734;
+$light-blue: #F5FAFE;
+$blue: #1F95EF;
+$white: #ffffff;
+$red: #fe5f55;
+
+/// Variabel font
+$main-font: 'Poppins', sans-serif;
+
+
+/* Global */
+h4, h2 {
+    font-weight: 600;
+}
+
+/********************** index.php **************************/
+.index {
+    font-family: $main-font;
+    background-color: $light-blue;
+    .navbar {
+        background-color: $blue;
+        h4 {
+            color: $white;
+        }
+    }
+    #home {
+        h2 {
+            color: $dark-navy;
+        }
+        button {
+            background-color: $white;
+            border: none;
+            font-weight: 600;
+            box-shadow: 4px 4px 4px rgba(22,23,52,0.3);
+            transition: padding 0.3s, box-shadow 0.3s;
+        }
+        button:hover {
+            background-color: $white;
+            padding: 10px;
+            box-shadow: 6px 6px 6px rgba(22,23,52,0.6);
+        }
+        #loginUser {
+            color: $dark-navy;
+        }
+        #loginAdmin {
+            color: $red;
+        }
+    }
+    #containerLoginUser, #containerLoginAdmin {
+        display: none;
+        h4 {
+            font-family: $main-font;
+            color: $dark-navy;
+        }
+        button {
+            background-color: $dark-navy;
+            box-shadow: 4px 4px 4px rgba(22,23,52,0.6);
+            border: none;
+            transition: background-color 0.3s, padding 0.3s;
+        }
+        button:hover {
+            background-color: $blue;
+            padding: 10px;
+        }
+        button:active {
+            box-shadow: none;
+        }
+    }
+    #containerLoginAdmin {
+        h4 {
+            color: $red;
+        }
+    }
+};
+
+
