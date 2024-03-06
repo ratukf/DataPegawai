@@ -12,18 +12,36 @@ h4, h2, h1 {
 .navbar h4 {
   color: #ffffff;
 }
+.navbar a {
+  text-decoration: none;
+}
 
 body {
   font-family: "Poppins", sans-serif;
   /*background-color: $light-blue;*/
 }
 
-a {
+.bold {
+  font-weight: 600;
+}
+
+.underline-none {
   text-decoration: none;
 }
 
-.bold {
-  font-weight: 600;
+.sidebar {
+  background-color: #161734;
+  border: none;
+  margin-bottom: 0;
+}
+.sidebar .menuSidebar .row {
+  transition: background-color 0.3s;
+}
+.sidebar .menuSidebar .row a {
+  color: #F5FAFE;
+}
+.sidebar .menuSidebar .row:hover {
+  background-color: black;
 }
 
 /********************** index.php **************************/
@@ -97,20 +115,6 @@ a {
   background-color: #F5FAFE;
   min-height: 100vh;
 }
-.lamanUser .mainContent .sidebar {
-  background-color: #161734;
-  border: none;
-  margin-bottom: 0;
-}
-.lamanUser .mainContent .sidebar .menuSidebar .row {
-  transition: background-color 0.3s;
-}
-.lamanUser .mainContent .sidebar .menuSidebar .row h4 {
-  color: #F5FAFE;
-}
-.lamanUser .mainContent .sidebar .menuSidebar .row:hover {
-  background-color: black;
-}
 .lamanUser .mainContent .body {
   background-color: #F5FAFE;
 }
@@ -118,38 +122,27 @@ a {
   display: none;
 }
 
-/*.lamanUser {
-    .sidebar {
-        box-shadow: 10px 0px 10px rgba(22,23,52,0.3);
-        background-color: $dark-navy;
-        height: 100vh;
-        .list-group {
-            a {
-                border: none;
-                background-color: $dark-navy;
-                color: $light-blue;
-                font-weight: 600;
-                transition: background-color 0.3s, color 0.3s;
-            }
-            a:hover {
-                background-color: $light-blue;
-                color: $dark-navy;
-            }
-        }
-    }
-    .mainContent {
-        background-color: $light-blue;
-    }
+.lamanAdmin {
+  background-color: #161734;
 }
-
-@media (max-width: 767px) {
-    .lamanUser {
-        .sidebar {
-            display: none;
-        }
-
-        .mainContent {
-            width: 100%;
-        }
-    }
-}*//*# sourceMappingURL=style.css.map */
+.lamanAdmin .navbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.lamanAdmin .navbar a {
+  transition: text-shadow 0.3s;
+}
+.lamanAdmin .navbar a:hover {
+  text-shadow: 2px 2px 5px #161734;
+}
+.lamanAdmin .navbar a:active {
+  text-shadow: none;
+}
+.lamanAdmin .mainContent {
+  background-color: #F5FAFE;
+  min-height: 100vh;
+}
+.lamanAdmin .mainContent .body {
+  background-color: #F5FAFE;
+}/*# sourceMappingURL=style.css.map */
