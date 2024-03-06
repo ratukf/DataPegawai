@@ -13,20 +13,35 @@ $main-font: 'Poppins', sans-serif;
 
 
 /* Global */
-h4, h2 {
+
+h4, h2, h1 {
+    font-weight: 600;
+}
+
+.navbar {
+    background-color: $blue;
+    width: 100%;
+    h4 {
+        color: $white;
+    }
+}
+
+body {
+    font-family: $main-font;
+    /*background-color: $light-blue;*/
+}
+
+a {
+    text-decoration: none;
+}
+
+.bold {
     font-weight: 600;
 }
 
 /********************** index.php **************************/
 .index {
-    font-family: $main-font;
     background-color: $light-blue;
-    .navbar {
-        background-color: $blue;
-        h4 {
-            color: $white;
-        }
-    }
     #home {
         h2 {
             color: $dark-navy;
@@ -77,4 +92,85 @@ h4, h2 {
     }
 };
 
+/********************** lamanUser.php **************************/
+
+.lamanUser {
+    background-color: $dark-navy;
+    .navbar {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        a {
+            transition: text-shadow 0.3s;
+        }
+        a:hover {
+            text-shadow: 2px 2px 5px $dark-navy;
+        }
+        a:active {
+            text-shadow: none;
+        }
+    }
+    .mainContent {
+        background-color:$light-blue;
+        min-height: 100vh;
+        .sidebar {
+            background-color: $dark-navy;
+            border: none;
+            margin-bottom: 0;
+            .menuSidebar {
+                
+                .row {
+                    transition: background-color 0.3s;
+                    h4 {
+                        color: $light-blue;
+                    }
+                }
+                .row:hover {
+                    background-color: black;
+                }
+            }
+        }
+        .body {
+            background-color: $light-blue;
+            .profilLamanUser, .dataPegawaiLamanUser, .akunLamanUser {
+                display: none;
+            }
+        }
+    }
+}
+/*.lamanUser {
+    .sidebar {
+        box-shadow: 10px 0px 10px rgba(22,23,52,0.3);
+        background-color: $dark-navy;
+        height: 100vh;
+        .list-group {
+            a {
+                border: none;
+                background-color: $dark-navy;
+                color: $light-blue;
+                font-weight: 600;
+                transition: background-color 0.3s, color 0.3s;
+            }
+            a:hover {
+                background-color: $light-blue;
+                color: $dark-navy;
+            }
+        }
+    }
+    .mainContent {
+        background-color: $light-blue;
+    }
+}
+
+@media (max-width: 767px) {
+    .lamanUser {
+        .sidebar {
+            display: none;
+        }
+
+        .mainContent {
+            width: 100%;
+        }
+    }
+}*/
 
