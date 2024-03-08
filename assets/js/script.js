@@ -20,6 +20,7 @@ function showLoginContainer(userType) {
   console.log("active page: ", activePage);
 }
 
+// Fungsi untuk mengalihkan laman setelah login
 function login(userType) {
   if (userType == "user") {
     email = document.getElementById("emailUser").value;
@@ -42,6 +43,7 @@ function login(userType) {
   }
 }
 
+// Fungsi untuk menyembunyikan elemen pada laman user
 function showLamanUser(div) {
   var divs = [
     "homeLamanUser",
@@ -102,6 +104,7 @@ function showLamanUser(div) {
   }
 }
 
+// Fungsi untuk menyembunyikan elemen pada laman admin
 function showLamanAdmin(div) {
   var divs = [
     "dataPegawaiLamanAdmin",
@@ -152,4 +155,3 @@ function showLamanAdmin(div) {
     document.getElementById("tambahLink").classList.remove("underline-none");
   }
 }
-

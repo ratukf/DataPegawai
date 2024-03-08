@@ -15,7 +15,6 @@ if (!$conn) {
 // Mendapatkan ID dari AJAX
 $id = $_POST['id'];
 
-// SQL untuk menghapus pegawai
 $sql = "DELETE FROM pegawai WHERE id = $id";
 
 // Eksekusi query
@@ -25,6 +24,5 @@ if (mysqli_query($conn, $sql)) {
     echo 'error: ' . mysqli_error($conn);
 }
 
-// Tutup koneksi
 mysqli_close($conn);
 ?>
