@@ -1,6 +1,4 @@
-##############################
-PROGRAM MANAJEMEN DATA PEGAWAI
-##############################
+# PROGRAM MANAJEMEN DATA PEGAWAI
 
 Program ini dikembangkan menggunakan bahasa pemrograman HTML, CSS, JavaScript, dan PHP.
 Program ini menggunakan preprocessor SASS, framework bootstrap, dan server localhost.
