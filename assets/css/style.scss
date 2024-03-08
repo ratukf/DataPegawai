@@ -11,9 +11,7 @@ $red: #fe5f55;
 /// Variabel font
 $main-font: 'Poppins', sans-serif;
 
-
 /* Global */
-
 h4, h2, h1 {
     font-weight: 600;
 }
@@ -120,14 +118,28 @@ body {
         position: sticky;
         top: 0;
         z-index: 10;
-        a {
-            transition: text-shadow 0.3s;
-        }
-        a:hover {
-            text-shadow: 2px 2px 5px $dark-navy;
-        }
-        a:active {
-            text-shadow: none;
+        .container {
+            .row {
+                .col-md-3 {
+                    form {
+                        button {
+                            background-color: $light-blue;
+                            color: $dark-navy;
+                            box-shadow: 4px 4px 4px 4px rgba(22,23,52,0.3);
+                            transition: padding-inline 0.3s ease, box-shadow 0.3s ease;
+                            border: none;
+                        }
+                        button:hover {
+                            padding-inline: 30px;
+                        }
+                        button:active {
+                            box-shadow: none;
+                            background-color: $dark-navy;
+                            color: $light-blue;
+                        }
+                    }
+                }
+            }
         }
     }
     .mainContent {
@@ -142,20 +154,36 @@ body {
     }
 }
 
+/********************** lamanAdmin.php **************************/
+
 .lamanAdmin {
     background-color: $dark-navy;
     .navbar {
         position: sticky;
         top: 0;
         z-index: 10;
-        a {
-            transition: text-shadow 0.3s;
-        }
-        a:hover {
-            text-shadow: 2px 2px 5px $dark-navy;
-        }
-        a:active {
-            text-shadow: none;
+        .container {
+            .row {
+                .col-md-3 {
+                    form {
+                        button {
+                            background-color: $light-blue;
+                            color: $dark-navy;
+                            box-shadow: 4px 4px 4px 4px rgba(22,23,52,0.3);
+                            transition: padding-inline 0.3s ease, box-shadow 0.3s ease;
+                            border: none;
+                        }
+                        button:hover {
+                            padding-inline: 30px;
+                        }
+                        button:active {
+                            box-shadow: none;
+                            background-color: $dark-navy;
+                            color: $light-blue;
+                        }
+                    }
+                }
+            }
         }
     }
     .mainContent {
@@ -163,7 +191,60 @@ body {
         min-height: 100vh;
         .body {
             background-color: $light-blue;
+            .editLamanAdmin, .tambahLamanAdmin {
+                display: none;
+            }
+            .tambahLamanAdmin {
+                form {
+                    button {
+                        background-color: $dark-navy;
+                        box-shadow: 4px 4px 4px rgba(22,23,52,0.6);
+                        border: none;
+                        color: $light-blue;
+                        transition: background-color 0.3s, padding 0.3s;
+                    }
+                    button:hover {
+                        background-color: $blue;
+                        padding: 10px;
+                    }
+                    button:active {
+                        box-shadow: none;
+                    }
+                }
+            }
         }
     }    
 }
 
+/********************** editAdmin.php **************************/
+.lamanAdminEdit {
+    background-color: $light-blue;
+    .navbar {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        .container {
+            .row {
+                .col-md-3 {
+                    form {
+                        button {
+                            background-color: $light-blue;
+                            color: $dark-navy;
+                            box-shadow: 4px 4px 4px 4px rgba(22,23,52,0.3);
+                            transition: padding-inline 0.3s ease, box-shadow 0.3s ease;
+                            border: none;
+                        }
+                        button:hover {
+                            padding-inline: 30px;
+                        }
+                        button:active {
+                            box-shadow: none;
+                            background-color: $dark-navy;
+                            color: $light-blue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

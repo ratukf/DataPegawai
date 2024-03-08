@@ -14,7 +14,9 @@
   </head>
   <body class="index">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg d-flex align-items-center h-100 shadow-lg">
+    <nav
+      class="navbar navbar-expand-lg d-flex align-items-center h-100 shadow-lg"
+    >
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -66,15 +68,15 @@
             <div class="card-body">
               <h4 class="card-title text-center">Login user</h4>
               <form
-                action=""
+                method="post"
+                action="loginUser.php"
                 id="formLoginUser"
-                onsubmit="login(event, 'user')"
               >
                 <!-- Tambahkan event.preventDefault() pada onsubmit -->
                 <label for="emailUser" class="mb-2">Email</label><br />
                 <input
                   type="text"
-                  name="passwordUser"
+                  name="emailUser"
                   id="emailUser"
                   placeholder="Masukan email anda"
                   class="form-control"
@@ -92,9 +94,8 @@
                 <div class="text-center">
                   <!-- Hapus onclick="login('user')" dan tambahkan type="button" -->
                   <button
-                    type="button"
+                    type="submit"
                     class="btn btn-primary"
-                    onclick="login('user')"
                   >
                     Login user
                   </button>
@@ -117,9 +118,9 @@
             <div class="card-body">
               <h4 class="card-title text-center">Login admin</h4>
               <form
-                action=""
+                method="post"
+                action="loginAdmin.php"
                 id="formLoginAdmin"
-                onsubmit="login(event, 'admin')"
               >
                 <label for="emailAdmin" class="mb-2">Email</label><br />
                 <input
@@ -141,9 +142,8 @@
                 /><br />
                 <div class="text-center">
                   <button
-                    type="button"
+                    type="submit"
                     class="btn btn-primary"
-                    onclick="login('admin')"
                   >
                     Login admin
                   </button>

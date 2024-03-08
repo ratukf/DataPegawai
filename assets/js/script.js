@@ -20,15 +20,6 @@ function showLoginContainer(userType) {
   console.log("active page: ", activePage);
 }
 
-function back() {
-  document.getElementById("home").style.display = "block";
-  if (activePage == "loginUser") {
-    document.getElementById("containerLoginUser").style.display = "none";
-  } else if (activePage == "loginAdmin") {
-    document.getElementById("containerLoginAdmin").style.display = "none";
-  }
-}
-
 function login(userType) {
   if (userType == "user") {
     email = document.getElementById("emailUser").value;
@@ -109,6 +100,56 @@ function showLamanUser(div) {
   } else if (div == 'akun') {
     document.getElementById("akunLink").classList.remove("underline-none");
   }
-
-
 }
+
+function showLamanAdmin(div) {
+  var divs = [
+    "dataPegawaiLamanAdmin",
+    "editLamanAdmin",
+    "tambahLamanAdmin"
+  ];
+
+  divs.forEach(function (elementID) {
+    document.getElementById(elementID).style.transition = "opacity 0.2s ease";
+    document.getElementById(elementID).style.opacity = "0";
+  });
+
+  setTimeout(function () {
+    divs.forEach(function (elementID) {
+      document.getElementById(elementID).style.display = "none";
+    });
+
+    if (div == "data") {
+      document.getElementById("dataPegawaiLamanAdmin").style.display = "block";
+    } else if (div == "edit") {
+      document.getElementById("editLamanAdmin").style.display = "block";
+    } else if (div == "tambah") {
+      document.getElementById("tambahLamanAdmin").style.display = "block";
+    } 
+
+    setTimeout(function () {
+      divs.forEach(function (elementID) {
+        document.getElementById(elementID).style.opacity = "1";
+      });
+    }, 50);
+  }, 200);
+
+  const links = document.getElementsByClassName("link-menu");
+
+  for (var i = 0; i < links.length; i++) {
+    if (links[i] !== div) {
+      links[i].classList.add("underline-none");
+    } else {
+      continue;
+    }
+  }
+  
+  if (div == 'data') {
+    document.getElementById("dataLink").classList.remove("underline-none");
+  } else if (div == 'edit') {
+    document.getElementById("editLink").classList.remove("underline-none");
+  } else if (div == 'tambah') {
+    document.getElementById("tambahLink").classList.remove("underline-none");
+  }
+}
+

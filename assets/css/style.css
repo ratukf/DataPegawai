@@ -102,14 +102,20 @@ body {
   top: 0;
   z-index: 10;
 }
-.lamanUser .navbar a {
-  transition: text-shadow 0.3s;
+.lamanUser .navbar .container .row .col-md-3 form button {
+  background-color: #F5FAFE;
+  color: #161734;
+  box-shadow: 4px 4px 4px 4px rgba(22, 23, 52, 0.3);
+  transition: padding-inline 0.3s ease, box-shadow 0.3s ease;
+  border: none;
 }
-.lamanUser .navbar a:hover {
-  text-shadow: 2px 2px 5px #161734;
+.lamanUser .navbar .container .row .col-md-3 form button:hover {
+  padding-inline: 30px;
 }
-.lamanUser .navbar a:active {
-  text-shadow: none;
+.lamanUser .navbar .container .row .col-md-3 form button:active {
+  box-shadow: none;
+  background-color: #161734;
+  color: #F5FAFE;
 }
 .lamanUser .mainContent {
   background-color: #F5FAFE;
@@ -122,6 +128,7 @@ body {
   display: none;
 }
 
+/********************** lamanAdmin.php **************************/
 .lamanAdmin {
   background-color: #161734;
 }
@@ -130,14 +137,20 @@ body {
   top: 0;
   z-index: 10;
 }
-.lamanAdmin .navbar a {
-  transition: text-shadow 0.3s;
+.lamanAdmin .navbar .container .row .col-md-3 form button {
+  background-color: #F5FAFE;
+  color: #161734;
+  box-shadow: 4px 4px 4px 4px rgba(22, 23, 52, 0.3);
+  transition: padding-inline 0.3s ease, box-shadow 0.3s ease;
+  border: none;
 }
-.lamanAdmin .navbar a:hover {
-  text-shadow: 2px 2px 5px #161734;
+.lamanAdmin .navbar .container .row .col-md-3 form button:hover {
+  padding-inline: 30px;
 }
-.lamanAdmin .navbar a:active {
-  text-shadow: none;
+.lamanAdmin .navbar .container .row .col-md-3 form button:active {
+  box-shadow: none;
+  background-color: #161734;
+  color: #F5FAFE;
 }
 .lamanAdmin .mainContent {
   background-color: #F5FAFE;
@@ -145,4 +158,46 @@ body {
 }
 .lamanAdmin .mainContent .body {
   background-color: #F5FAFE;
+}
+.lamanAdmin .mainContent .body .editLamanAdmin, .lamanAdmin .mainContent .body .tambahLamanAdmin {
+  display: none;
+}
+.lamanAdmin .mainContent .body .tambahLamanAdmin form button {
+  background-color: #161734;
+  box-shadow: 4px 4px 4px rgba(22, 23, 52, 0.6);
+  border: none;
+  color: #F5FAFE;
+  transition: background-color 0.3s, padding 0.3s;
+}
+.lamanAdmin .mainContent .body .tambahLamanAdmin form button:hover {
+  background-color: #1F95EF;
+  padding: 10px;
+}
+.lamanAdmin .mainContent .body .tambahLamanAdmin form button:active {
+  box-shadow: none;
+}
+
+/********************** editAdmin.php **************************/
+.lamanAdminEdit {
+  background-color: #F5FAFE;
+}
+.lamanAdminEdit .navbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.lamanAdminEdit .navbar .container .row .col-md-3 form button {
+  background-color: #F5FAFE;
+  color: #161734;
+  box-shadow: 4px 4px 4px 4px rgba(22, 23, 52, 0.3);
+  transition: padding-inline 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+}
+.lamanAdminEdit .navbar .container .row .col-md-3 form button:hover {
+  padding-inline: 30px;
+}
+.lamanAdminEdit .navbar .container .row .col-md-3 form button:active {
+  box-shadow: none;
+  background-color: #161734;
+  color: #F5FAFE;
 }/*# sourceMappingURL=style.css.map */
